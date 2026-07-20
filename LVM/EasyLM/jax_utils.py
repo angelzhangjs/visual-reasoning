@@ -14,9 +14,22 @@ import jax.numpy as jnp
 from jax.sharding import PartitionSpec as PS
 from jax.sharding import Mesh
 from jax.experimental import mesh_utils
-from jax.experimental.pjit import with_sharding_constraint as _with_sharding_constraint
-from jax.experimental.pjit import pjit
-from jax.interpreters import pxla
+# JAX >=0.4.14 moved with_sharding_constraint out of experimental.pjit.
+try:
+    from jax.lax import with_sharding_constraint as _with_sharding_constraint
+except ImportError:
+    from jax.experimental.pjit import with_sharding_constraint as _with_sharding_constraint
+try:
+    from jax.experimental.pjit import pjit
+except ImportError:
+    try:
+        from jax import pjit
+    except ImportError:
+        from jax.sharding import pjit  # type: ignore
+try:
+    from jax.interpreters import pxla
+except ImportError:
+    pxla = None  # mesh APIs queried via jax.sharding below
 import numpy as np
 from transformers import FlaxLogitsWarper
 
@@ -178,7 +191,17 @@ def get_jax_mesh(axis_dims, names):
 
 def names_in_current_mesh(*names):
     """ Check if current mesh axes contain these names. """
-    mesh_axis_names = pxla.thread_resources.env.physical_mesh.axis_names
+    try:
+        mesh_axis_names = pxla.thread_resources.env.physical_mesh.axis_names
+    except Exception:
+        mesh_axis_names = ()
+    # JAX >=0.4.34 / 0.5+: prefer abstract mesh when physical mesh is empty.
+    if not mesh_axis_names:
+        try:
+            from jax.sharding import get_abstract_mesh
+            mesh_axis_names = get_abstract_mesh().axis_names
+        except Exception:
+            mesh_axis_names = ()
     return set(names) <= set(mesh_axis_names)
 
 

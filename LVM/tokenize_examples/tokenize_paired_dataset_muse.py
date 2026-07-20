@@ -67,7 +67,7 @@ def main(argv):
     # Load the pre-trained vq model from the hub
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    net = VQGANModel.from_pretrained('vqlm/muse/ckpts/laion').to(device)
+    net = VQGANModel.from_pretrained('/data/scratch/angelz/vision_reasoning/checkpoints/vqvae_ckpts').to(device)
     net.eval()
 
 

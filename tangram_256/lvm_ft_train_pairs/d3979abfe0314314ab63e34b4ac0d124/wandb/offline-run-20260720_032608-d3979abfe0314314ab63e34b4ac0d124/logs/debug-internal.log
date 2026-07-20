@@ -1,0 +1,137 @@
+2026-07-20 03:26:09,007 INFO    StreamThr :1181359 [internal.py:wandb_internal():86] W&B internal server running at pid: 1181359, started at: 2026-07-20 03:26:09.004603
+2026-07-20 03:26:09,009 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: status
+2026-07-20 03:26:09,027 INFO    WriterThread:1181359 [datastore.py:open_for_write():87] open: /data/scratch/angelz/vision_reasoning/tangram_256/lvm_ft_train_pairs/d3979abfe0314314ab63e34b4ac0d124/wandb/offline-run-20260720_032608-d3979abfe0314314ab63e34b4ac0d124/run-d3979abfe0314314ab63e34b4ac0d124.wandb
+2026-07-20 03:26:09,159 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: run_start
+2026-07-20 03:26:09,254 DEBUG   HandlerThread:1181359 [system_info.py:__init__():26] System info init
+2026-07-20 03:26:09,254 DEBUG   HandlerThread:1181359 [system_info.py:__init__():41] System info init done
+2026-07-20 03:26:09,254 INFO    HandlerThread:1181359 [system_monitor.py:probe():214] Collecting system info
+2026-07-20 03:26:09,366 DEBUG   HandlerThread:1181359 [system_info.py:probe():150] Probing system
+2026-07-20 03:26:09,371 DEBUG   HandlerThread:1181359 [system_info.py:_probe_git():135] Probing git
+2026-07-20 03:26:09,469 DEBUG   HandlerThread:1181359 [system_info.py:_probe_git():143] Probing git done
+2026-07-20 03:26:09,469 DEBUG   HandlerThread:1181359 [system_info.py:probe():198] Probing system done
+2026-07-20 03:26:09,469 DEBUG   HandlerThread:1181359 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-181-generic-x86_64-with-glibc2.35', 'python': '3.10.20', 'heartbeatAt': '2026-07-20T07:26:09.366577', 'startedAt': '2026-07-20T07:26:08.914385', 'docker': None, 'cuda': None, 'args': ('--mesh_dim=1,-1,1', '--dtype=bf16', '--total_steps=3000', '--log_freq=10', '--save_model_freq=500', '--load_llama_config=vqlm_7b', '--load_checkpoint=trainstate_params::/path/to/LVM_ckpts/streaming_train_state', '--optimizer.type=adamw', '--optimizer.adamw_optimizer.weight_decay=0.1', '--optimizer.adamw_optimizer.lr=2e-5', '--optimizer.adamw_optimizer.end_lr=5e-6', '--optimizer.adamw_optimizer.lr_warmup_steps=100', '--optimizer.adamw_optimizer.lr_decay_steps=3000', '--optimizer.accumulate_gradient_steps=4', '--train_dataset.type=json', '--train_dataset.text_processor.fields=,{tokens},', '--train_dataset.json_dataset.path=/data/scratch/angelz/vision_reasoning/tangram_256/tangram_train_pairs.jsonl', '--train_dataset.json_dataset.seq_length=4096', '--train_dataset.json_dataset.batch_size=4', '--checkpointer.save_optimizer_state=True', '--logger.online=False', '--logger.output_dir=/data/scratch/angelz/vision_reasoning/tangram_256/lvm_ft_train_pairs'), 'state': 'running', 'program': '-m EasyLM.models.llama.llama_train', 'codePathLocal': None, 'git': {'remote': 'git@github.com:angelzhangjs/visual-reasoning.git', 'commit': '38993a42435dc936bcf1fe55813d8582acbc092c'}, 'email': None, 'root': '/data/scratch/angelz/vision_reasoning', 'host': 'torralba-h100-1.csail.mit.edu', 'username': 'mengzhang', 'executable': '/data/scratch/angelz/miniconda3/envs/LVM/bin/python', 'cpu_count': 64, 'cpu_count_logical': 128, 'cpu_freq': {'current': 1637.1079843750001, 'min': 1500.0, 'max': 2550.0}, 'cpu_freq_per_core': [{'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 3499.977, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 2550.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 2550.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 2550.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 3499.974, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 2550.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 2550.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 2550.0, 'min': 1500.0, 'max': 2550.0}, {'current': 2550.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 2550.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 2550.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 3499.974, 'min': 1500.0, 'max': 2550.0}, {'current': 2550.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2550.0}], 'disk': {'/': {'total': 1798.4853515625, 'used': 37.802734375}}, 'gpu': 'NVIDIA H100 80GB HBM3', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}, {'name': 'NVIDIA H100 80GB HBM3', 'memory_total': 85520809984}], 'memory': {'total': 1007.5810546875}}
+2026-07-20 03:26:09,472 INFO    HandlerThread:1181359 [system_monitor.py:probe():224] Finished collecting system info
+2026-07-20 03:26:09,472 INFO    HandlerThread:1181359 [system_monitor.py:probe():227] Publishing system info
+2026-07-20 03:26:09,474 DEBUG   HandlerThread:1181359 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2026-07-20 03:26:24,586 ERROR   HandlerThread:1181359 [system_info.py:_save_conda():221] Error saving conda packages: Command '['conda', 'env', 'export']' timed out after 15 seconds
+Traceback (most recent call last):
+  File "/data/scratch/angelz/miniconda3/envs/LVM/lib/python3.10/site-packages/wandb/sdk/internal/system/system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "/data/scratch/angelz/miniconda3/envs/LVM/lib/python3.10/subprocess.py", line 347, in call
+    return p.wait(timeout=timeout)
+  File "/data/scratch/angelz/miniconda3/envs/LVM/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/data/scratch/angelz/miniconda3/envs/LVM/lib/python3.10/subprocess.py", line 1951, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['conda', 'env', 'export']' timed out after 15 seconds
+2026-07-20 03:26:24,603 DEBUG   HandlerThread:1181359 [system_info.py:_save_conda():222] Saving conda packages done
+2026-07-20 03:26:24,612 INFO    HandlerThread:1181359 [system_monitor.py:probe():229] Finished publishing system info
+2026-07-20 03:26:24,764 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: status_report
+2026-07-20 03:26:24,764 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: keepalive
+2026-07-20 03:26:24,765 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: status_report
+2026-07-20 03:26:24,765 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: status_report
+2026-07-20 03:26:24,767 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: keepalive
+2026-07-20 03:26:24,767 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: status_report
+2026-07-20 03:26:24,767 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: status_report
+2026-07-20 03:26:24,767 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: keepalive
+2026-07-20 03:26:24,767 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: status_report
+2026-07-20 03:26:27,934 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: python_packages
+2026-07-20 03:26:29,769 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: status_report
+2026-07-20 03:26:29,769 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: status_report
+2026-07-20 03:26:30,602 DEBUG   SenderThread:1181359 [sender.py:send():379] send: exit
+2026-07-20 03:26:30,602 INFO    SenderThread:1181359 [sender.py:send_exit():586] handling exit code: 1
+2026-07-20 03:26:30,604 INFO    SenderThread:1181359 [sender.py:send_exit():588] handling runtime: 21
+2026-07-20 03:26:30,611 INFO    SenderThread:1181359 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-07-20 03:26:30,611 INFO    SenderThread:1181359 [sender.py:send_exit():594] send defer
+2026-07-20 03:26:30,612 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,612 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 0
+2026-07-20 03:26:30,612 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,612 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 0
+2026-07-20 03:26:30,612 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 1
+2026-07-20 03:26:30,612 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,612 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 1
+2026-07-20 03:26:30,613 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,613 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 1
+2026-07-20 03:26:30,613 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 2
+2026-07-20 03:26:30,613 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,613 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 2
+2026-07-20 03:26:30,613 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,613 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 2
+2026-07-20 03:26:30,613 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 3
+2026-07-20 03:26:30,613 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,613 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 3
+2026-07-20 03:26:30,613 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,614 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 3
+2026-07-20 03:26:30,614 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 4
+2026-07-20 03:26:30,614 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,614 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 4
+2026-07-20 03:26:30,614 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,614 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 4
+2026-07-20 03:26:30,614 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 5
+2026-07-20 03:26:30,614 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,614 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 5
+2026-07-20 03:26:30,614 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,614 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 5
+2026-07-20 03:26:30,614 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 6
+2026-07-20 03:26:30,615 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,615 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 6
+2026-07-20 03:26:30,615 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,615 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 6
+2026-07-20 03:26:30,615 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 7
+2026-07-20 03:26:30,615 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: status_report
+2026-07-20 03:26:30,615 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,615 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 7
+2026-07-20 03:26:30,615 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: status_report
+2026-07-20 03:26:30,618 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,618 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 7
+2026-07-20 03:26:30,618 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 8
+2026-07-20 03:26:30,618 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,618 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 8
+2026-07-20 03:26:30,618 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,618 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 8
+2026-07-20 03:26:30,618 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 9
+2026-07-20 03:26:30,618 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,618 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 9
+2026-07-20 03:26:30,618 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,619 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 9
+2026-07-20 03:26:30,619 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 10
+2026-07-20 03:26:30,619 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,619 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 10
+2026-07-20 03:26:30,619 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,619 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 10
+2026-07-20 03:26:30,619 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 11
+2026-07-20 03:26:30,619 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,619 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 11
+2026-07-20 03:26:30,619 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,619 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 11
+2026-07-20 03:26:30,619 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 12
+2026-07-20 03:26:30,619 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,619 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 12
+2026-07-20 03:26:30,620 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,620 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 12
+2026-07-20 03:26:30,620 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 13
+2026-07-20 03:26:30,620 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,620 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 13
+2026-07-20 03:26:30,620 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,622 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 13
+2026-07-20 03:26:30,622 INFO    SenderThread:1181359 [sender.py:transition_state():614] send defer: 14
+2026-07-20 03:26:30,623 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: defer
+2026-07-20 03:26:30,623 DEBUG   SenderThread:1181359 [sender.py:send():379] send: final
+2026-07-20 03:26:30,623 INFO    HandlerThread:1181359 [handler.py:handle_request_defer():172] handle defer: 14
+2026-07-20 03:26:30,623 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: defer
+2026-07-20 03:26:30,623 INFO    SenderThread:1181359 [sender.py:send_request_defer():610] handle sender defer: 14
+2026-07-20 03:26:30,624 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: poll_exit
+2026-07-20 03:26:30,624 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: poll_exit
+2026-07-20 03:26:30,624 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: poll_exit
+2026-07-20 03:26:30,625 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: poll_exit
+2026-07-20 03:26:30,625 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: server_info
+2026-07-20 03:26:30,627 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: get_summary
+2026-07-20 03:26:30,627 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: sampled_history
+2026-07-20 03:26:30,627 DEBUG   SenderThread:1181359 [sender.py:send_request():406] send_request: server_info
+2026-07-20 03:26:30,627 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: internal_messages
+2026-07-20 03:26:30,628 INFO    MainThread:1181359 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2026-07-20 03:26:30,628 INFO    MainThread:1181359 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2026-07-20 03:26:30,628 DEBUG   HandlerThread:1181359 [handler.py:handle_request():146] handle_request: shutdown
+2026-07-20 03:26:30,629 INFO    HandlerThread:1181359 [handler.py:finish():866] shutting down handler
+2026-07-20 03:26:31,627 INFO    WriterThread:1181359 [datastore.py:close():296] close: /data/scratch/angelz/vision_reasoning/tangram_256/lvm_ft_train_pairs/d3979abfe0314314ab63e34b4ac0d124/wandb/offline-run-20260720_032608-d3979abfe0314314ab63e34b4ac0d124/run-d3979abfe0314314ab63e34b4ac0d124.wandb
+2026-07-20 03:26:31,628 INFO    SenderThread:1181359 [sender.py:finish():1546] shutting down sender
